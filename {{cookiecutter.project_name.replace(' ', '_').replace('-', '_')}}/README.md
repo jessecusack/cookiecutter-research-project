@@ -1,5 +1,5 @@
 {% set is_open_source = cookiecutter.open_source_license != 'Not open source' -%}
-# {{ cookiecutter.project_directory_name.replace('-', ' ').replace('_', ' ').title() }}
+# {{ cookiecutter.project_name.replace('-', ' ').replace('_', ' ').title() }}
 
 {{ cookiecutter.project_short_description }}
 
@@ -13,12 +13,16 @@ A conda environment is specified in `environment.yml` and may be install using t
 
 To install:
 
-    ./install_environment.sh
-    
+```bash
+$ ./install_environment.sh
+```
+
 To remove:
 
-    ./remove_environment.sh
-    
+```bash
+$ ./remove_environment.sh
+```
+
 These also create a jupyter kernel for the environment.
 
 ---
