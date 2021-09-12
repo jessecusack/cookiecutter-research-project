@@ -14,13 +14,13 @@ A conda environment is specified in `environment.yml` and may be install using t
 To install:
 
 ```bash
-$ ./install_environment.sh
+./install_environment.sh
 ```
 
 To remove:
 
 ```bash
-$ ./remove_environment.sh
+./remove_environment.sh
 ```
 
 These also install/remove the jupyter kernel for the environment.
