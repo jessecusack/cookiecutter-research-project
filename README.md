@@ -27,10 +27,10 @@ If you have previously created a package with this template confirm the prompt t
 The installation dialog will ask for a few inputs:
 * `full_name`: Your name.
 * `email`: Your email.
-* `project_name`: The name of the project (whitespaces will be replaced with underscores).
+* `project_name`: The name of the project which is also the name of the directory if will be created in (whitespaces will be replaced with underscores).
 * `project_short_description`: A short description of the project for the readme.
 * `conda_environment_name`: The desired name of the conda environment associated with the project. This defaults to the project name. 
 * `create_matlab_toolboxes_directory`: Answering yes to this prompt will cause a directory to be generated for matlab_toolboxes. 
-* `open_source_license`: Chose a license for your package.
+* `open_source_license`: Chose a license for your project.
 
 > Unfortunately there seems to be a bug that does [not allow backspace](https://github.com/audreyr/cookiecutter/issues/875) in cookiecutter on certain platforms. If you make a typo cancel the input `ctrl+c` and start over again.
