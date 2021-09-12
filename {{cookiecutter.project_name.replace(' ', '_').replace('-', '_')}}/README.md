@@ -23,7 +23,7 @@ To remove:
 $ ./remove_environment.sh
 ```
 
-These also create a jupyter kernel for the environment.
+These also install/remove the jupyter kernel for the environment.
 
 ---
 {% if is_open_source %}
