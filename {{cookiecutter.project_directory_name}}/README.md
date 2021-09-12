@@ -5,7 +5,7 @@
 
 ## Requirements
 
-This project requires [`conda`](https://docs.conda.io/en/latest/miniconda.html). 
+* [Conda package manager](https://conda.io/en/latest/) (I recommend the lightweight version [miniconda](https://docs.conda.io/en/latest/miniconda.html))
 
 ## Installing and removing the environment
 
