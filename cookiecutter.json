@@ -1,0 +1,9 @@
+{
+    "full_name": "Jesse Cusack",
+    "email": "jmcusack@marine.rutgers.edu",
+    "project_directory_name": "new_project",
+    "project_short_description": "",
+    "conda_environment_name": "{{ cookiecutter.project_directory_name.lower().replace(' ', '-').replace('_', '-') }}",
+    "create_matlab_toolboxes_directory": "y",
+    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+}
