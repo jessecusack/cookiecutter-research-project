@@ -18,3 +18,7 @@ dependencies:
   - seawater
   - gsw
   - pip
+{%- if cookiecutter.as_python_package == 'y' %}
+  - pip:
+      - "-e ."
+{%- endif %}

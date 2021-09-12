@@ -2,7 +2,6 @@ from glob import glob
 import os
 import shutil
 
-print(os.getcwd())
 
 def remove(filepath):
     if os.path.isfile(filepath):
@@ -10,11 +9,20 @@ def remove(filepath):
     elif os.path.isdir(filepath):
         shutil.rmtree(filepath)
 
-create_matlab_toolbox = '{{cookiecutter.create_matlab_toolboxes_directory}}' == 'y'
 
-if not create_matlab_toolbox:
-    # remove top-level folder
+if not '{{cookiecutter.as_python_package}}' == 'y':
+    remove('{{cookiecutter.project_name.replace(' ', '_').replace('-', '_')}}')
+    remove('pyproject.toml')
+    remove('setup.cfg')
+
+if not '{{cookiecutter.include_matlab}}' == 'y':
     remove('matlab_toolboxes')
+    
+if not '{{cookiecutter.create_author_file}}' == 'y':
+    remove('AUTHORS.md')
+    
+if '{{ cookiecutter.open_source_license }}' == 'Not open source':
+    remove('LICENSE')
     
 # Make the shell scripts executable
 for sh_script in glob("*.sh"):
