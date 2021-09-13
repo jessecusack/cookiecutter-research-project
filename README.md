@@ -41,3 +41,24 @@ The installation dialog will ask for a few inputs:
 * `open_source_license`: Choose a license for your project.
 
 > Unfortunately there seems to be a bug that does [not allow backspace](https://github.com/audreyr/cookiecutter/issues/875) in cookiecutter on certain platforms. If you make a typo cancel the input `ctrl+c` and start over again.
+
+### Setting up git/github
+
+To initialize a git repository in the folder, navigate to your project folder that was just created and do
+
+```bash
+git init
+```
+
+We now want to connect this local repository to a github repo. This can be done directly from the command line using the [Github Command Line Interface](https://github.com/cli/cli#installation). You will have to install it following one of the methods described [here](https://github.com/cli/cli#installation)
+
+**Note**: if you do not have sudo privileges for your machine, it may be more straightforward to manually initialize a repo on GitHub with the _exact same name_ as your project, and then link this with your local project repo. See [here](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line) for a description of how to do this.
+
+If using the Github Command Line Interface, simply navigate to the project root folder and type:
+
+```bash
+gh repo create 
+```
+and follow the instructions. You might have to authenticate this if you are using it for the first time, but this should all be explained by prompts in the command line. 
+
+Now all you need to do is commit the files and push them (the remote has already been set by the previous command).
