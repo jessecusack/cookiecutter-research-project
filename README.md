@@ -33,7 +33,7 @@ The installation dialog will ask for a few inputs:
 * `full_name`: Your name.
 * `email`: Your email.
 * `project_name`: The name of the project which is also the name of the directory if will be created in (whitespaces will be replaced with underscores).
-* `project_short_description`: A short description of the project for the readme.
+* `description`: A short description of the project for the readme.
 * `conda_environment_name`: The desired name of the conda environment associated with the project. This defaults to the project name.
 * `as_python_package`: Answering yes will add the basic configuration files and folders (`setup.cfg`, `pyproject.toml`, etc.) to install your project as a python package.
 * `include_matlab`: To include a `matlab_toolboxes/` directory.

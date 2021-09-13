@@ -2,7 +2,7 @@
     "full_name": "Jesse Cusack",
     "email": "jmcusack@marine.rutgers.edu",
     "project_name": "new_project",
-    "project_short_description": "",
+    "description": "",
     "conda_environment_name": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
     "as_python_package": "y",
     "include_matlab": "y",
