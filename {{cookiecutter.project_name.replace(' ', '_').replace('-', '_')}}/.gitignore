@@ -6,6 +6,7 @@
 *.ipynb
 
 {%- if cookiecutter.include_matlab == 'y' %}
+
 # MATLAB
 *.m~
 {%- endif %}
@@ -38,6 +39,7 @@ __pycache__/
 *$py.class
 
 {%- if cookiecutter.as_python_package == 'y' %}
+
 # C extensions
 *.so
 

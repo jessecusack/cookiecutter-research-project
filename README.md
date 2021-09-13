@@ -1,6 +1,8 @@
 # Cookiecutter Research Project
 
-A bare-bones cookiecutter template for a research project in python and/or MATLAB.
+A bare-bones cookiecutter template for a research project in python (perhaps with some MATLAB too).
+
+This borrows heavily from [cookiecutter-data-science](https://drivendata.github.io/cookiecutter-data-science/), [cookiecutter-science-project](https://github.com/jbusecke/cookiecutter-science-project) and [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage).
 
 ## Requirements
 
@@ -16,7 +18,7 @@ conda install -c conda-forge cookiecutter
 ## Not required but highly recommended
 
 * A [github](https://github.com/) account.
-    * Note that your account must be set up for [authentication via SSH key-pair](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) before initializing repositories using cookiecutter.
+    * Note that everything is easier if you set up [authentication via SSH key-pair](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
 
 ## Quickstart
 
