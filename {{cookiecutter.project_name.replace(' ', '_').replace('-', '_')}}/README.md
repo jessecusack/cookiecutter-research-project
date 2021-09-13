@@ -25,6 +25,8 @@ To remove:
 
 These also install/remove the jupyter kernel for the environment.
 
+
+
 ---
 {% if is_open_source %}
 * Free software: {{ cookiecutter.open_source_license }}
