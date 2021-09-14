@@ -25,6 +25,8 @@ To remove:
 
 These also install/remove the jupyter kernel for the environment.
 
+> If these don't execute, you might need to change the file permissions with `chmod u+x *.sh`.
+
 ## Project Structure
 {% set dir_name = cookiecutter.project_name.replace(' ', '_').replace('-', '_') -%}
 
