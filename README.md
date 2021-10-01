@@ -1,8 +1,8 @@
 # Cookiecutter Research Project
 
-A bare-bones cookiecutter template for a research project in python (perhaps with some MATLAB too).
+A lightweight cookiecutter template for a research project in python (perhaps with some MATLAB too).
 
-This borrows heavily from [cookiecutter-data-science](https://drivendata.github.io/cookiecutter-data-science/), [cookiecutter-science-project](https://github.com/jbusecke/cookiecutter-science-project) and [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage).
+This borrows heavily from [cookiecutter-data-science](https://drivendata.github.io/cookiecutter-data-science/), [cookiecutter-science-project](https://github.com/jbusecke/cookiecutter-science-project) and [cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage). However, it avoids testing frameworks, CI and documentation generation in an effort to keep things simple. 
 
 ## Requirements
 
