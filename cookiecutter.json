@@ -1,6 +1,6 @@
 {
     "full_name": "Jesse Cusack",
-    "email": "jmcusack@marine.rutgers.edu",
+    "email": "jesse.cusack@oregonstate.edu",
     "project_name": "new_project",
     "description": "",
     "conda_environment_name": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
