@@ -15,7 +15,7 @@ You can install [Cookiecutter Python package](https://cookiecutter.readthedocs.i
 pip install --user cookiecutter
 ```
 
-Otherwiese you can install [Cookiecutter Python package](https://cookiecutter.readthedocs.io/en/latest/installation.html) easily with conda.
+Otherwise you can install [Cookiecutter Python package](https://cookiecutter.readthedocs.io/en/latest/installation.html) easily with conda.
 
 ``` bash
 conda install -c conda-forge cookiecutter
@@ -61,10 +61,15 @@ git init
 We now want to connect this local repository to a github repo. This can be done directly from the command line using the [Github Command Line Interface](https://github.com/cli/cli#installation). You will have to install it following one of the methods described [here](https://github.com/cli/cli#installation)
 
 
-### Outdated method (for MacOSx)
-**Note**: if you do not have sudo privileges for your machine, it may be more straightforward to manually initialize a repo on GitHub with the _exact same name_ as your project, and then link this with your local project repo. See [here](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line) for a description of how to do this.
+### Method with GitHub Cli
+**Note**: if you do not have GitHub Cli, you can download it on Windows via:
 
-If using the Github Command Line Interface, simply navigate to the project root folder and type:
+````bash
+winget install --id GitHub.cli
+````
+More info here: https://github.com/cli/cli#installation
+
+Then, using the Command Line Interface, simply navigate to the project root folder and type:
 
 ```bash
 gh repo create 
