@@ -28,6 +28,8 @@ These also install/remove the jupyter kernel for the environment.
 > If these don't execute, you might need to change the file permissions with `chmod u+x *.sh`.
 
 ## Project Structure
+This structure is adapted from the TIER protocol 4.0 (https://www.projecttier.org/tier-protocol/protocol-4-0/root/).
+Each folder and subfolder has to have a descriptive and meaningful name, contains the files that are supposed to be in there, and a readme file documents the content of each.
 {% set dir_name = cookiecutter.project_name.replace(' ', '_').replace('-', '_') -%}
 
 ```
@@ -38,16 +40,25 @@ These also install/remove the jupyter kernel for the environment.
     ├── AUTHORS.md         <- Author information.
 {%- endif %}
     ├── data/
-    │   ├── external       <- Data pulled in from outside of this project.
-    │   ├── internal       <- Data generated within this project.
+    │   ├── raw            <- Data files you initially obtain or construct at the beginning of your project.
+    │   ├── processed      <- Data that you have cleaned and processed.
+    │   ├── intermediate   <- Data created at some point in the processing of your data that need to be saved temporarily.
     │   └── README.md      <- Information on data sources and retrieval. 
     │
-    ├── analysis/          <- Jupyter notebooks, MATLAB code and anything else that constitutes analysis.
+    ├── scripts/           <- Jupyter notebooks, MATLAB code and anything else that constitutes analysis.
+    │   ├── processing     <- Scripts that transform raw data files into processed data files.
+    │   ├── analysis       <- Scripts that produce the results, such as figures, tables and statistics.
+    │   ├── supplementary  <- Scripts that produce the results present in the Supplementary Materials.
     │   ├── README.md      <- Any information about the analysis, such as execution order. 
-    │   ├── *.py           <- Python files that can be converted to notebooks using jupytext.
-    │   └── *.m            <- Analysis in MATLAB.
+    │   ├── *.py           <- Master script in Python that reproduces the Results of your project by executing all the other scripts, in the correct order.
+    │   ├── *.m            <- Master script in MATLAB that reproduces the Results of your project by executing all the other scripts, in the correct order.
+    │   ├── *.r            <- Master script in in R that reproduces the Results of your project by executing all the other scripts, in the correct order.
+    │   └── README.md      <- Information on data processing, data analysis and about scripts that produce them. 
     │
-    ├── figures/           <- Saved figures generated during analysis.
+    ├── output/            <- Saved figures, tables and other outputs generated during analysis.
+    │   ├── results        <- Contains files presented in your report.
+    │   ├── supplementary  <- Contains files presented in the Supplementary Materials.
+    │   └── README.md      <- Information on data outputs and about scripts that produce them. 
     │
     ├── environment.yml    <- Conda environment specification. Install using the bash scripts.
 {%- if cookiecutter.as_python_package == 'y' %}
