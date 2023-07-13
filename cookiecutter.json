@@ -1,6 +1,6 @@
 {
-    "full_name": "Jesse Cusack",
-    "email": "jesse.cusack@oregonstate.edu",
+    "full_name": "Valentin Guigon",
+    "email": "valentin.guigon@outlook.com",
     "project_name": "new_project",
     "description": "",
     "conda_environment_name": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
