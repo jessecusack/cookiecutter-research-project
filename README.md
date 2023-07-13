@@ -58,10 +58,12 @@ To initialize a git repository in the folder, navigate to your project folder th
 git init
 ```
 
-We now want to connect this local repository to a github repo. This can be done directly from the command line using the [Github Command Line Interface](https://github.com/cli/cli#installation). You will have to install it following one of the methods described [here](https://github.com/cli/cli#installation)
+We now want to connect this local repository to a github repo. 
+### 1. Set up a remote repository via github.com or via the desktop interface.
 
+This can also be done directly from the command line using the [Github Command Line Interface](https://github.com/cli/cli#installation). You will have to install it following one of the methods described [here](https://github.com/cli/cli#installation)
 
-### Method with GitHub Cli
+### 2. Otherwise there exists a method with GitHub Cli
 **Note**: if you do not have GitHub Cli, you can download it on Windows via:
 
 ````bash
@@ -69,11 +71,23 @@ winget install --id GitHub.cli
 ````
 More info here: https://github.com/cli/cli#installation
 
-Then, using the Command Line Interface, simply navigate to the project root folder and type:
+Then, using the Command Line Interface, navigate to the project root folder, type and follow instructions: 
 
 ```bash
 gh repo create 
 ```
-and follow the instructions. You might have to authenticate this if you are using it for the first time, but this should all be explained by prompts in the command line. 
+You might have to authenticate with -- gh auth login -- this if you are using it for the first time, but this should all be explained by prompts in the command line. 
 
-Now all you need to do is commit the files and push them (the remote has already been set by the previous command).
+### Now all you need to do is commit the files and push them (the remote has already been set by the previous command).
+
+```bash
+git init -b main
+git remote add origin git@github.com:ValentinGuigon/<new_project>.git
+# Sets the new remote
+git remote -v
+# Verifies the new remote URL
+git add .
+git commit -m "setting up the directory"
+git push origin main
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+```
