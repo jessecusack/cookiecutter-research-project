@@ -55,7 +55,7 @@ The installation dialog will ask for a few inputs:
 To initialize a git repository in the folder, navigate to your project folder that was just created and do
 
 ```bash
-git init
+git init -b main
 ```
 
 We now want to connect this local repository to a github repo. 
@@ -81,7 +81,6 @@ You might have to authenticate with -- gh auth login -- this if you are using it
 ### Now all you need to do is commit the files and push them (the remote has already been set by the previous command).
 
 ```bash
-git init -b main
 git remote add origin git@github.com:ValentinGuigon/<new_project>.git
 # Sets the new remote
 git remote -v
