@@ -5,7 +5,8 @@
 
 ## Requirements
 
-* [Conda package manager](https://conda.io/en/latest/) (I recommend the lightweight version [miniconda](https://docs.conda.io/en/latest/miniconda.html))
+* Either [Conda package manager](https://conda.io/en/latest/) (I recommend the lightweight version [miniconda](https://docs.conda.io/en/latest/miniconda.html))
+* Or [pip package manager](https://pypi.org/project/pip/)
 
 ## Installing and removing the environment
 
@@ -52,8 +53,7 @@ Each folder and subfolder has to have a descriptive and meaningful name, contain
     │   ├── README.md      <- Any information about the analysis, such as execution order. 
     │   ├── *.py           <- Master script in Python that reproduces the Results of your project by executing all the other scripts, in the correct order.
     │   ├── *.m            <- Master script in MATLAB that reproduces the Results of your project by executing all the other scripts, in the correct order.
-    │   ├── *.r            <- Master script in in R that reproduces the Results of your project by executing all the other scripts, in the correct order.
-    │   └── README.md      <- Information on data processing, data analysis and about scripts that produce them. 
+    │   └── *.r            <- Master script in in R that reproduces the Results of your project by executing all the other scripts, in the correct order.
     │
     ├── output/            <- Saved figures, tables and other outputs generated during analysis.
     │   ├── results        <- Contains files presented in your report.
