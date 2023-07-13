@@ -9,10 +9,16 @@ This borrows heavily from [cookiecutter-data-science](https://drivendata.github.
 * [Python 3](https://www.python.org/downloads/)
 * [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html)
 
-You can install [Cookiecutter Python package](https://cookiecutter.readthedocs.io/en/latest/installation.html) easily with conda.
+You can install [Cookiecutter Python package](https://cookiecutter.readthedocs.io/en/latest/installation.html) easily with pip.
 
 ``` bash
 pip install --user cookiecutter
+```
+
+Otherwiese you can install [Cookiecutter Python package](https://cookiecutter.readthedocs.io/en/latest/installation.html) easily with conda.
+
+``` bash
+conda install -c conda-forge cookiecutter
 ```
 
 ## Not required but highly recommended
