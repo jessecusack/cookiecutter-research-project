@@ -5,7 +5,8 @@
 
 ## Requirements
 
-* [Conda package manager](https://conda.io/en/latest/) (I recommend the lightweight version [miniconda](https://docs.conda.io/en/latest/miniconda.html))
+* Either [Conda package manager](https://conda.io/en/latest/) (I recommend the lightweight version [miniconda](https://docs.conda.io/en/latest/miniconda.html))
+* Or [pip package manager](https://pypi.org/project/pip/)
 
 ## Installing and removing the environment
 
