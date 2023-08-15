@@ -1,15 +1,7 @@
 # macOS
 .DS_Store
 
-# Jupyter notebooks
-.ipynb_checkpoints
-*.ipynb
-
-{%- if cookiecutter.include_matlab == 'y' %}
-
 # MATLAB
-*.m~
-{%- endif %}
 
 # Common binary data formats
 *.nc
@@ -19,12 +11,7 @@
 *.bin
 
 # Common figure formats
-*.jpg
-*.jpeg
-*.png
-*.tiff
 *.eps
-*.pdf
 *.svg
 *.gif
 
@@ -32,19 +19,10 @@
 *.mp4
 *.mov
 
-# Python
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-{%- if cookiecutter.as_python_package == 'y' %}
-
 # C extensions
 *.so
 
 # Distribution / packaging
-.Python
 build/
 develop-eggs/
 dist/
@@ -57,19 +35,12 @@ parts/
 sdist/
 var/
 wheels/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 MANIFEST
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
 # Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-{%- endif %}
+.Rproj.user
+
+# R

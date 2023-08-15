@@ -1,0 +1,18 @@
+{
+    "full_name": "Valentin Guigon",
+    "email": "valentin.guigon@outlook.com",
+
+    "project_name": "new_project",
+    "description": "A short description of the project.", 
+
+    "include_python": "yes",
+    "include_matlab": "yes",
+    "include_r": "yes",
+
+    "create_author_file": "yes",
+
+    "open_source_license": ["MIT", "BSD", "Apache Software License 2.0", "No license file"],
+
+    "version": "0.1.0"
+    
+}
